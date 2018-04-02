@@ -30,8 +30,6 @@ cd nord-gnome-terminal
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-# ~/.zshrc
-# ZSH_THEME="powerlevel9k/powerlevel9k"
 ```
 ## Vim
 
@@ -52,4 +50,12 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 ```bash
 # nautilus for i3
 gsettings set org.gnome.desktop.background show-desktop-icons false
+```
+### i3lock
+
+```bash
+cd Documents
+git clone https://github.com/meskarune/i3lock-fancy
+cd i3lock-fancy
+sudo cp lock icons /usr/local/bin
 ```
