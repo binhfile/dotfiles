@@ -43,7 +43,7 @@ Plug 'morhetz/gruvbox'
 
 " Language "
 Plug 'fatih/vim-go'
-Plug 'plasticboy/vim-markdown'
+" Plug 'plasticboy/vim-markdown'
 Plug 'vim-scripts/DoxygenToolkit.vim'
 
 " Initialize plugin system
@@ -131,6 +131,6 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 " Markdown
-let g:vim_markdown_folding_disabled = 1
+" let g:vim_markdown_folding_disabled = 1
 
 
