@@ -68,6 +68,7 @@ set si "smart indent
 set expandtab ts=4 sw=4 ai
 " Syntastic
 let g:syntastic_cpp_checkers=['flawfinder', 'cppcheck', 'clang_tidy']
+let g:syntastic_cpp_clang_tidy_post_args = '-checks="*"'
 "  YouCompleteMe
 let g:ycm_python_binary_path = '/usr/bin/python3.5'
 let g:ycm_confirm_extra_conf = 0
