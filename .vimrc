@@ -67,8 +67,8 @@ set si "smart indent
 "  Tab = 4 Spaces
 set expandtab ts=4 sw=4 ai
 " Syntastic
-let g:syntastic_cpp_checkers=['flawfinder', 'cppcheck', 'clang_tidy']
-let g:syntastic_cpp_clang_tidy_post_args = '-checks="*"'
+let g:syntastic_cpp_checkers=['flawfinder', 'cppcheck']
+let g:syntastic_cpp_clang_tidy_args='-checks="*"'
 "  YouCompleteMe
 let g:ycm_python_binary_path = '/usr/bin/python3.5'
 let g:ycm_confirm_extra_conf = 0
@@ -111,6 +111,12 @@ map <C-h> <C-w>h
 if has('mouse')
 set mouse=a
 endif
+
+" Uncomment the following to have Vim jump to the last position when
+" reopening a file
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif 
 
 " Utilities "
 "  Auto reload
